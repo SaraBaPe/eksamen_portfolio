@@ -48,5 +48,56 @@
   grid-column: 1/2;
 }
 
+.site-link {
+  grid-column: 2/3;
+  align-self: flex-start;
+}
+
 @media screen and (max-width: 800px) {
+  .tema3-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .tema3_img-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: unset;
+  }
+
+  .number {
+    width: initial;
+  }
+
+  .number h3 {
+    transform: rotate(0);
+    text-align: end;
+    font-size: 20px;
+  }
+
+  .tema3-images {
+    width: 100%;
+  }
+
+  .tema3-images .img_03 {
+    max-width: none;
+  }
+
+  .tema3-images .img_03:last-child {
+    display: none;
+  }
+
+  .tema3_txt-container {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .site-link {
+    justify-self: center;
+    align-self: center;
+  }
 }

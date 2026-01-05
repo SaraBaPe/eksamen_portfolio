@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   margin-top: 1.5rem;
+  gap: 1.5rem;
 }
 
 .hero_img {
@@ -42,4 +43,40 @@
 }
 
 @media screen and (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hero_text h1 {
+    font-size: 36px;
+  }
+
+  .hero_text h2 {
+    font-size: 24px;
+  }
+
+  .hero_text h3 {
+    font-size: 20px;
+  }
+
+  .hero_img {
+    max-width: 300px;
+    justify-self: center;
+  }
+
+  .forside-about {
+    margin-bottom: 0;
+  }
+
+  .kasse {
+    display: none;
+  }
+
+  .forside-container {
+    padding: 1rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -57,19 +57,52 @@
 
 .site-link {
   grid-column: 2/3;
-  color: white;
-  text-decoration: none;
-  background-color: black;
-  width: fit-content;
-  height: fit-content;
-  padding: 1.5rem;
-  border-radius: 5px;
   align-self: flex-start;
-  transition: ease 0.2s;
-  border: solid 2px black;
 }
 
 .site-link:hover {
   background-color: white;
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .tema2-container {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .tema_txt-container {
+    grid-template-columns: 1fr;
+    flex: none;
+    padding: 0 1rem;
+  }
+
+  .tema2info {
+    grid-column: 1;
+    flex-direction: column;
+  }
+
+  .site-link {
+    grid-column: 1;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+
+  .figur {
+    display: none;
+  }
+
+  .number h3 {
+    transform: rotate(0);
+    text-align: end;
+    font-size: 20px;
+  }
+
+  .tema2_img-container {
+    margin-top: 1.5rem;
+  }
+
+  .tema2_img {
+    max-width: none;
+  }
 }

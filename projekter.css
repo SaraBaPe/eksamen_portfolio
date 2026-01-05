@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: auto;
   margin-top: 4rem;
+  gap: 1rem;
 }
 
 .projekter {
@@ -53,4 +54,35 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 800px);
+@media screen and (max-width: 800px) {
+  .titel-projekt {
+    padding: 1rem;
+  }
+
+  .titel-projekt h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .titel-projekt p {
+    text-align: justify;
+  }
+
+  .projekter {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .project_card {
+    max-width: none;
+    padding: 1rem;
+  }
+
+  .project_card a {
+    background-color: unset;
+  }
+
+  .project_card a img {
+    opacity: 1;
+  }
+}
