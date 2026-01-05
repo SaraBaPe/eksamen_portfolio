@@ -127,10 +127,9 @@ textarea {
 fieldset {
   width: 50%;
   height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-color: black;
   margin-bottom: 25px;
+  padding: 1rem 2rem;
 }
 
 button {
@@ -145,7 +144,6 @@ button {
   margin: auto;
   display: grid;
   grid-template-columns: auto;
-  justify-content: center;
 }
 
 .error-message {
@@ -158,7 +156,7 @@ button {
   color: red;
 }
 
-.kontakt-info {
+.form-heading {
   align-self: center;
   display: grid;
   grid-template-columns: auto;
@@ -169,5 +167,70 @@ button {
   gap: 1rem;
   width: 100%;
   height: 100%;
-  border-bottom: solid 1.5px black;
+}
+
+#webform {
+  margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about_hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .about-text-titlel,
+  .about-edu,
+  .erhvervserfaring-text,
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-text-title h1 {
+    font-size: 3rem;
+  }
+
+  .about-text h3 {
+    font-family: "new-order",  sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.25rem;
+  }
+
+  .skills p {
+    justify-self: start;
+  }
+
+  .gul_prik {
+    display: none;
+  }
+
+  .text-text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  fieldset {
+    width: 100%;
+    padding: 1rem 2.5rem;
+  }
 }
