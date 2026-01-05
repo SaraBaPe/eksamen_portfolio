@@ -1,0 +1,25 @@
+.number {
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  margin-bottom: 20px;
+  margin-top: 75px;
+}
+
+.text5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 2;
+  padding: 2rem 6rem;
+  gap: 2rem;
+  text-align: justify;
+}
+
+.img-fem img {
+  max-width: 300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: -4, -3;
+}
+
+@media screen and (max-width: 800px) {
+}

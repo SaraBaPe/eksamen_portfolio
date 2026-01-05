@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "urw-form-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #efede5;
+  z-index: 100;
+  padding: 0px 6.5rem 0.2rem;
+}
+
+.menu_container {
+  display: flex;
+  gap: 2.5rem;
+}
+main {
+  padding: 0 6.5rem;
+}
+
+footer {
+  padding: 3rem 6.5rem;
+}
+
+.logo a {
+  width: 10rem;
+  height: auto;
+  display: block;
+}
+
+.left {
+  padding: 0.7rem 0;
+}
+
+/* .left,
+.center,
+.right {
+  flex: 1;
+} */
+
+.center {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+  align-items: center;
+  border-bottom: solid 1.5px black;
+}
+
+.right {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 55px;
+}
+
+.menu a {
+  padding: 10px;
+  color: black;
+  font-family: "futura-100", sans-serif;
+  font-weight: 60;
+  font-style: normal;
+  text-decoration: none;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: gray;
+}
+
+.burger {
+  width: 35px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .center {
+    border-bottom: 0;
+  }
+
+  .menu_container {
+    border-bottom: solid 1px black;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .bruger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+    transition: 0.2s linear;
+  }
+
+  .bruger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .bruger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #efede5;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 0 5px 5px black (0, 0, 0, 0.1); */
+    z-index: 1000;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 25px;
+  }
+}
+
+body {
+  background-color: #efede5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "new-order",  sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 96px;
+}
+
+h2 {
+  font-family: "futura-100", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "urw-form-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+p {
+  font-family: "urw-form-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem;
+  border-top: solid 1.5px black;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconer ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.iconer li {
+  list-style: none;
+  width: 87px;
+  height: 87px;
+  background-color: lightgrey;
+  transition: ease-in-out 0.2s;
+}
+
+.iconer li:hover {
+  transform: scale(1.07);
+}
+
+.iconer a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tilbage-knap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+.tilbage-knap:hover a:hover {
+  transform: scale(1.07);
+}
+
+.tilbage-knap a {
+  background-color: #c00000;
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+  transition: ease-in-out 0.2s;
+}

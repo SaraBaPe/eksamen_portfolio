@@ -1,0 +1,45 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero_img {
+  display: block;
+  max-width: 635px;
+  height: auto;
+  flex: 1;
+}
+
+.hero_text {
+  align-self: center;
+  flex: 1;
+  justify-self: center;
+}
+
+.kasse {
+  width: 145px;
+}
+
+.forside-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 6rem;
+  gap: 2rem;
+}
+
+.forside-text p {
+  text-align: justify;
+  gap: 4rem;
+}
+
+.forside-about {
+  border-top: solid 1.5px black;
+  padding: 2rem 0;
+  margin-top: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+}

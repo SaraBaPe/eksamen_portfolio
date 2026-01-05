@@ -1,0 +1,52 @@
+.tema3-container {
+  margin-top: 4rem;
+}
+
+.tema3_img-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: fit-content;
+  gap: 2rem;
+}
+
+.text03 {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 2;
+  padding: 2rem 6rem;
+  gap: 2rem; */
+  text-align: justify;
+}
+
+.img_03 {
+  aspect-ratio: 286/314;
+  max-width: 300px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.tema3-images {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.img_03 img {
+  height: 100%;
+}
+
+.number {
+  width: fit-content;
+  height: fit-content;
+}
+
+.number h3 {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: 3rem;
+  grid-column: 1/2;
+}
+
+@media screen and (max-width: 800px) {
+}
