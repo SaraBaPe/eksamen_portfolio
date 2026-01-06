@@ -1,9 +1,14 @@
-/* .img_tema4 img {
-  max-width: 300px;
+.img_tema4 img {
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
+  object-position: top;
+}
+
+.img_tema4 {
+  aspect-ratio: 236 / 260;
+  object-position: top;
+  overflow: hidden;
+  align-self: center;
+}
 
 .text_4 {
   /* display: grid;
@@ -16,26 +21,55 @@
 .tema4_txt-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* padding: 2rem 6rem; */
   gap: 2rem;
+
+  grid-column: 3/5;
 }
 
 .roed_kasse {
   width: 123px;
+  height: 230px;
+  align-self: end;
 }
 
-.kasse_img {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.number {
+  width: fit-content;
+  height: fit-content;
 }
 
 .number h3 {
   transform: rotate(-90deg);
-  transform-origin: top left;
-  margin-bottom: 20px;
-  margin-top: 75px;
+  transform-origin: center;
+  font-size: 48px;
+}
+
+.tema4_img-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.tema4-head {
+  display: flex;
+  gap: 1rem;
+  grid-column: 2/5;
+}
+
+.tema4-container {
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.text_4:nth-child(3),
+.site-link {
+  grid-column: 2;
 }
 @media screen and (max-width: 800px) {
+  .tema4-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
   .roed_kasse {
     display: none;
   }
@@ -43,22 +77,22 @@
   .tema4-head {
     display: flex;
     flex-direction: column;
+    grid-column: 1;
   }
 
   .number h3 {
     transform: rotate(0);
     margin: 0;
-    text-align: end;
+    font-size: 20px;
+  }
+
+  .number {
+    justify-self: end;
   }
 
   .img_tema4 img {
     max-width: none;
     height: auto;
-  }
-
-  .tema4_img-container {
-    display: flex;
-    flex-direction: column;
   }
 
   .img_tema4 {
@@ -69,13 +103,20 @@
     align-self: center;
   }
 
-  .img_tema4:last-child {
+  .img_tema4:not(:has(+ .img_tema4)) {
     display: none;
   }
 
   .tema4_txt-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    grid-column: 1;
+  }
+
+  .text_4:nth-child(3),
+  .site-link {
+    grid-column: 1;
   }
 
   .site-link {

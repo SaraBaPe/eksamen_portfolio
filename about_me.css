@@ -15,8 +15,8 @@ li {
   list-style: none;
 }
 
-.portræt_about {
-  max-width: 596px;
+.portræt-about {
+  max-width: 586px;
 }
 
 .portræt-about img {
@@ -86,6 +86,8 @@ li {
   width: 200px;
   display: grid;
   grid-template-columns: 1fr;
+  margin-left: 13.5rem;
+  margin-top: 2rem;
 }
 
 .mellemstykke {
@@ -97,6 +99,16 @@ li {
 }
 
 /*form*/
+
+.formgroup input {
+  height: 80px;
+  padding: 0 1rem;
+  font-size: 20px;
+}
+
+.formgroup input::placeholder {
+  font-size: 20px;
+}
 
 form input[type="text"] {
   border: none;
@@ -122,14 +134,21 @@ textarea {
   border: none;
   background-color: #b9b9b9;
   resize: none;
+  font-size: 20px;
+}
+
+textarea::placeholder {
+  font-size: 20px;
 }
 
 fieldset {
-  width: 50%;
   height: auto;
   border-color: black;
   margin-bottom: 25px;
-  padding: 1rem 2rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 button {
@@ -141,7 +160,6 @@ button {
 
 .formgroup {
   padding: 5px;
-  margin: auto;
   display: grid;
   grid-template-columns: auto;
 }
@@ -165,12 +183,14 @@ button {
 
 .overordnet {
   gap: 1rem;
-  width: 100%;
   height: 100%;
+  justify-items: center;
 }
 
 #webform {
   margin-top: 1.2rem;
+  max-width: 817px;
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -232,5 +252,20 @@ button {
   fieldset {
     width: 100%;
     padding: 1rem 2.5rem;
+    gap: 0.5rem;
+  }
+
+  .formgroup input {
+    height: 20px;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .formgroup input::placeholder {
+    font-size: 1rem;
+  }
+
+  textarea::placeholder {
+    font-size: 1rem;
   }
 }
